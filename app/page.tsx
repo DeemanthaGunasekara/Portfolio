@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <main className="max-w-6xl mx-auto px-6 py-12">
         <Hero />
+        <Projects />
       </main>
     </div>
   );
