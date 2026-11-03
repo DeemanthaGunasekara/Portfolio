@@ -5,25 +5,22 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
   theme: {
     extend: {
-      colors: {
-        background: "#090d16",
-        surface: "#0f172a",
-        "surface-light": "#1e293b",
-        accent: {
-          cyan: "#06b6d4",
-          violet: "#8b5cf6",
-          emerald: "#10b981",
-        },
-      },
       fontFamily: {
+        heading: ["var(--font-space-grotesk)", "sans-serif"],
         sans: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"],
       },
-      animation: {
-        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      letterSpacing: {
+        tight: "-0.03em", // Your exact -3% from Figma!
+      },
+      colors: {
+        canvas: "#0F1012",       // Figma: 0F1012 (Deep Page Dark)
+        surface: "#14151A",      // Figma: 14151A (Card background)
+        accent: "#D4FF4F",       // Figma: D4FF4F (Neon Lime)
+        borderSubtle: "#2A2C33",  // Figma: 2A2C33 (Card borders)
+        heading: "#F2F2EE",      // Figma: F2F2EE (Headings white)
+        muted: "#8D919A",        // Figma: 8D919A (Body text)
       },
     },
   },
