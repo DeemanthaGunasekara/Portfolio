@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Academics from "@/components/Academics";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-[116px]">
         <Hero />
         <Projects />
+        <Academics />
       </main>
     </div>
   );
