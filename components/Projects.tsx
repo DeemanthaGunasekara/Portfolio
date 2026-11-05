@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "SiteTrace - Cloud SaaS Platform",
     description:
       "Architecting an end-to-end multi-tenant SaaS application designed to streamline workflows with automated background jobs, secure authentication, and responsive dashboards. Built with modern web standards and scalable cloud architecture.",
-    tools: ["Nest.js", "TypeScript", "Node.js", "PostgreSQL"],
+    tools: ["Nest.js", "TypeScript", "React","Expo", "PostgreSQL"],
     liveUrl: "#",
     githubUrl: "https://github.com/orgs/BitSync-Level-II-Project/repositories",
     caseStudyUrl: "https://dms.uom.lk/s/Y6YjreExnzTb7H8",
