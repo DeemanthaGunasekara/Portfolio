@@ -15,7 +15,9 @@
 
 ## 📸 Overview
 
-This portfolio was built line-by-line from a blank canvas to showcase my software engineering background, full-stack projects, and cloud/DevOps journey as an IT undergraduate at the **University of Moratuwa**.
+A modern personal developer portfolio designed in **Figma** and built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. 
+
+This site serves as a central hub to showcase my technical projects, software engineering background, and practical experience with full-stack development and cloud technologies as an IT undergraduate at the **University of Moratuwa**.
 
 ### ✨ Key Features
 - **Editorial Typography**: Styled with `Space Grotesk` (display headlines, -3% tracking) and `Inter` (readable UI body text).
