@@ -9,28 +9,28 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer id="contact" className="w-full bg-accent text-black pt-20 pb-12 mt-20">
+    <footer id="contact" className="w-full bg-accent text-black pt-10 sm:pt-12 pb-6 sm:pb-8 mt-16 sm:mt-20">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-[116px]">
         
         {/* Top 2-Column Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 pb-8 sm:pb-10">
           
           {/* Left Column: Get my CV */}
           <div className="lg:col-span-6 flex flex-col justify-between">
             <div>
-              <span className="text-[12px] tracking-[0.14em] uppercase text-black/80 font-medium">
+              <span className="text-[11px] tracking-[0.14em] uppercase text-black/80 font-medium">
                 LET&apos;S CONNECT
               </span>
               
-              <h2 className="font-heading font-medium text-6xl sm:text-7xl lg:text-[88px] tracking-tight leading-[0.95] text-black my-6">
+              <h2 className="font-heading font-medium text-3xl sm:text-4xl lg:text-[46px] tracking-tight leading-[1] text-black my-3.5">
                 Get my CV.
               </h2>
 
-              <div className="pt-2">
+              <div className="pt-1">
                 <a
                   href="/cv.pdf"
                   download
-                  className="inline-flex items-center gap-2 bg-black text-accent font-medium text-[16px] px-8 py-4 rounded-full hover:bg-black/90 active:scale-95 transition"
+                  className="inline-flex items-center gap-2 bg-black text-accent font-medium text-[14px] px-6 py-2.5 rounded-full hover:bg-black/90 active:scale-95 transition"
                 >
                   Download CV (PDF) &darr;
                 </a>
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
 
             {/* Email Contact Line */}
-            <p className="text-base sm:text-lg md:text-[20px] text-black font-normal pt-10">
+            <p className="text-[14px] text-black font-normal pt-5">
               Or email me:{" "}
               <a
                 href="mailto:gunasekarapdvp@email.com"
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Right Column: Find Me On (Socials List) */}
           <div className="lg:col-span-6 flex flex-col justify-start">
-            <span className="text-[12px] tracking-[0.14em] uppercase text-black/80 font-medium mb-4">
+            <span className="text-[11px] tracking-[0.14em] uppercase text-black/80 font-medium mb-3">
               FIND ME ON
             </span>
 
@@ -62,7 +62,7 @@ export default function Footer() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between py-5 border-t border-black/20 text-black hover:opacity-75 transition group text-lg sm:text-[20px]"
+                  className="flex items-center justify-between py-3 border-t border-black/20 text-black hover:opacity-75 transition group text-[15px]"
                 >
                   <span className="font-normal">{social.name}</span>
                   <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
@@ -76,7 +76,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Sub-bar: Copyright & Back to Top */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-black/15 text-[14px] text-black/80">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-5 border-t border-black/15 text-[12px] text-black/80">
           <p>© 2026 Deemantha Gunasekara. All rights reserved.</p>
           <a
             href="#top"
