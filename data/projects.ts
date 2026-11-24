@@ -17,7 +17,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     number: "01",
-    year: "2024",
+    year: "2026",
     title: "SiteTrace — Cloud SaaS Platform",
     description:
       "Architected a multi-tenant cloud SaaS platform to automate workflow operations with background worker queues, secure JWT/role-based auth, and live operational dashboards.",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
   },
   {
     number: "02",
-    year: "2024",
+    year: "2026",
     title: "Cloud-Native Microservices Platform",
     description:
       "6-container microservices system with an NGINX API gateway. Orchestrated on Kubernetes with Helm and Prometheus monitoring.",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     number: "03",
-    year: "2023",
+    year: "2025",
     title: "Kickbots Arena — Microcontroller Hardware System",
     description:
       "Designed an embedded robotic system with low-level C microcontroller programming, dual H-bridge motor driver circuits, and sensor-driven combat arena telemetry.",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
   },
   {
     number: "04",
-    year: "2024",
+    year: "2026",
     title: "Developer Portfolio & Design System",
     description:
       "Designed an editorial dark theme design system in Figma and implemented it with Next.js 14 App Router, custom Tailwind tokens, and automated Vercel pipelines.",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
   },
   {
     number: "05",
-    year: "2024",
+    year: "2025",
     title: "React Movie Hub",
     description:
       "Built a responsive single-page web application interfacing with external movie APIs, featuring debounced real-time search queries, dynamic filtering, and clean component state management.",
@@ -79,7 +79,7 @@ export const projects: Project[] = [
   },
   {
     number: "06",
-    year: "2024",
+    year: "2025",
     title: "Blog App",
     description:
       "Full-stack blogging web application featuring user authentication, secure session handling, and relational CRUD operations built with PHP and MySQL.",
