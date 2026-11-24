@@ -27,7 +27,8 @@ export default function ProjectCardWide({ project }: ProjectCardWideProps) {
         {/* 2. Middle Column: Title, Description & Tool Pills */}
         <div className="lg:col-span-6 flex flex-col justify-between">
           <div>
-            <h3 className="font-heading font-medium text-2xl sm:text-3xl lg:text-[34px] tracking-tight leading-[1.15] text-heading group-hover:text-accent transition duration-150 mb-3">
+            {/* Title stays clean text-heading (no neon hover) just like homepage cards */}
+            <h3 className="font-heading font-medium text-2xl sm:text-3xl lg:text-[34px] tracking-tight leading-[1.15] text-heading mb-3">
               {project.title}
             </h3>
 
@@ -52,14 +53,14 @@ export default function ProjectCardWide({ project }: ProjectCardWideProps) {
         {/* 3. Right Column: Arrow Button, TYPE Metadata & Action Links */}
         <div className="lg:col-span-4 flex flex-col justify-between h-full pt-4 lg:pt-0 border-t lg:border-t-0 border-borderSubtle/50 lg:pl-6">
           
-          {/* Top-right corner circular arrow icon */}
+          {/* Top-right corner circular arrow icon (subtle white/slate hover matching homepage) */}
           <div className="hidden lg:flex justify-end mb-6">
             <a
               href={primaryUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Open ${project.title}`}
-              className="w-11 h-11 rounded-full border border-[#3d4048] flex items-center justify-center text-heading group-hover:border-accent group-hover:text-accent transition duration-150 text-lg"
+              className="w-11 h-11 rounded-full border border-borderSubtle flex items-center justify-center text-muted group-hover:text-heading group-hover:border-slate-600 transition duration-150 text-lg"
             >
               &#x2197;
             </a>
