@@ -1,71 +1,36 @@
+// components/Projects.tsx
 import React from "react";
-
-interface Project {
-  number: string;
-  title: string;
-  description: string;
-  tools: string[];
-  liveUrl?: string;
-  githubUrl?: string;
-  caseStudyUrl?: string;
-}
-
-const projects: Project[] = [
-  {
-    number: "01",
-    title: "SiteTrace - Cloud SaaS Platform",
-    description:
-      "Architecting an end-to-end multi-tenant SaaS application designed to streamline workflows with automated background jobs, secure authentication, and responsive dashboards. Built with modern web standards and scalable cloud architecture.",
-    tools: ["Nest.js", "TypeScript", "React","Expo", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/orgs/BitSync-Level-II-Project/repositories",
-    caseStudyUrl: "https://dms.uom.lk/s/Y6YjreExnzTb7H8",
-  },
-  {
-    number: "02",
-    title: "Kickbots Arena \u2014 Microcontroller Hardware System",
-    description:
-      "Engineered an embedded hardware project featuring microcontroller programming, motor controls, and sensor integration for an arena-based robotic system.",
-    tools: ["C / Embedded", "Microcontrollers", "Hardware Design"],
-    githubUrl: "https://github.com/DeemanthaGunasekara/Kickbots-Arena",
-  },
-  {
-    number: "03",
-    title: "React Movie Hub",
-    description:
-      "A responsive single-page web app built with React that interfaces with external movie APIs. Features real-time search queries, dynamic catalog filtering, and clean state-driven component architecture.",
-    tools: ["React", "REST APIs", "JavaScript"],
-    githubUrl: "https://github.com/DeemanthaGunasekara/React-Movie-App",
-  },
-  {
-    number: "04",
-    title: "Developer Portfolio Website",
-    description:
-      "Designed in Figma and built completely from scratch using Next.js App Router, TypeScript, and Tailwind CSS. Features custom editorial dark mode styling, responsive typography, and static build optimization.",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/DeemanthaGunasekara/Portfolio",
-    
-  },
-];
+import Link from "next/link";
+import { projects } from "@/data/projects";
 
 export default function Projects() {
+  // Only display the 4 featured projects on the landing page
+  const featuredProjects = projects.filter((project) => project.featured);
+
   return (
     <section id="projects" className="py-20 border-t border-borderSubtle/50">
       
-      {/* 1. Section Header: Title on Left, Count on Right */}
+      {/* 1. Section Header: Title on Left, "View all projects" Link on Right */}
       <div className="flex items-baseline justify-between mb-12">
         <h2 className="font-heading font-medium text-3xl sm:text-4xl md:text-[48px] tracking-tight text-heading">
           Selected projects
         </h2>
-        <span className="text-[15px] text-muted font-normal">
-          [04] projects
-        </span>
+
+        {/* Clickable link to your new projects page */}
+        <Link
+          href="/projects"
+          className="group flex items-center gap-1.5 text-[14px] sm:text-[15px] text-muted hover:text-accent transition font-normal"
+        >
+          <span>View all projects [{projects.length.toString().padStart(2, "0")}]</span>
+          <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+            ↗
+          </span>
+        </Link>
       </div>
 
       {/* 2. Responsive 2x2 Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project) => (
+        {featuredProjects.map((project) => (
           <div
             key={project.number}
             className="bg-surface border border-borderSubtle rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition group"
@@ -92,7 +57,7 @@ export default function Projects() {
               </p>
             </div>
 
-            {/* Bottom: Tool Chips & Accent Links */}
+            {/* Bottom: Tool Chips & Action Links */}
             <div>
               {/* Tool Chips */}
               <div className="flex flex-wrap gap-2 mb-6">
@@ -106,7 +71,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Project Action Links (Lime accent from your Figma!) */}
+              {/* Action Links */}
               <div className="flex flex-wrap items-center gap-5 text-[14px] text-accent font-medium">
                 {project.liveUrl && (
                   <a
