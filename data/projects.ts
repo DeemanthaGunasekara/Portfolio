@@ -55,7 +55,7 @@ export const projects: Project[] = [
   {
     number: "04",
     year: "2026",
-    title: "Developer Portfolio & Design System",
+    title: " Portfolio Website",
     description:
       "Designed an editorial dark theme design system in Figma and implemented it with Next.js 14 App Router, custom Tailwind tokens, and automated Vercel pipelines.",
     tools: ["Next.js", "TypeScript", "Tailwind CSS"],
