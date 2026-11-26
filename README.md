@@ -1,32 +1,36 @@
-# ⚡ Deemantha Gunasekara — Portfolio
+# ⚡ Deemantha Gunasekara — Developer Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![Custom Domain](https://img.shields.io/badge/Domain-deemantha.is--a.dev-D4FF4F?style=flat&logo=cloudflare&logoColor=black&labelColor=14151A)](https://deemantha.is-a.dev)
 [![Deployed on Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=flat&logo=vercel)](https://vercel.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> A modern, high-contrast, editorial personal portfolio website designed from scratch in **Figma** and engineered with **Next.js App Router**, **TypeScript**, and **Tailwind CSS**.
+> A high-contrast, editorial dark-mode personal developer portfolio designed in **Figma** and engineered with **Next.js 14 App Router**, **TypeScript**, and **Tailwind CSS**.
 
-🔗 **Live Website**: [https://deemantha.is-a.dev](https://deemantha.is-a.dev)   
-🎨 **Figma Design**: Custom 1440px dark-mode layout with neon-lime accents (`#D4FF4F`)
+🔗 **Live Website**: [https://deemantha.is-a.dev](https://deemantha.is-a.dev)  
+🎨 **Figma Design**: Custom 1440px dark-mode design system with neon-lime accents (`#D4FF4F`)
 
 ---
 
 ## 📸 Overview
 
-A modern personal developer portfolio designed in **Figma** and built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. 
+A modern personal portfolio designed from scratch in **Figma** and built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. 
 
-This site serves as a central hub to showcase my technical projects, software engineering background, and practical experience with full-stack development and cloud technologies as an IT undergraduate at the **University of Moratuwa**.
+This site serves as a central hub showcasing my technical projects, software engineering background, cloud & microservices platforms, and embedded robotics work as an Information Technology undergraduate at the **University of Moratuwa, Sri Lanka**.
 
 ### ✨ Key Features
-- **Editorial Typography**: Styled with `Space Grotesk` (display headlines, -3% tracking) and `Inter` (readable UI body text).
-- **High-Contrast Dark Theme**: Deep midnight canvas (`#0F1012`), elevated card surfaces (`#14151A`), and high-voltage neon lime accents (`#D4FF4F`).
-- **Showcase Grid (2x2)**: Data-mapped project cards featuring my upcoming flagship SaaS (**SiteTrace**), microcontroller robotics (**KickBots**), and web apps.
+
+- **Editorial Typography & Dark Theme**: Deep midnight canvas (`#0F1012`), elevated card surfaces (`#14151A`), crisp white headings in `Space Grotesk` (with tight `-0.03em` tracking), readable `Inter` body text, and sharp neon lime accents (`#D4FF4F`).
+- **Dedicated All Projects Page (`/projects`)**: A full-width archive featuring all 6 projects with interactive category filter pills (`All`, `Full-Stack`, `Cloud & DevOps`, `Academic`, `Embedded`) and live project count badges.
+- **Featured Homepage Grid (2x2)**: Curated showcase of top flagship projects directly on the landing page with seamless navigation to the complete archive.
+- **Centralized Data Layer (`data/projects.ts`)**: Single source of truth supporting multi-category tagging, external demo/GitHub links, tool pill generation, and metadata tags.
+- **Native Next.js SEO & Indexing Engine**: Dynamic `sitemap.ts` and `robots.ts` generation, Google Search Console site verification, and rich OpenGraph/Twitter social cards.
+- **Smart Sticky Navigation**: Pathname-aware header with neon active-link indicators, back-to-section anchor links, and instant CV download CTA.
 - **Direct CV Download**: Instant access to an ATS-friendly, single-page professional resume (`/cv.pdf`).
-- **Full-Width Inverted Contact Banner**: High-impact footer with social reach-outs and smooth back-to-top navigation.
-- **Vercel Analytics**: Privacy-friendly, real-time visitor and page-view tracking.
-- **Git Etiquette**: Developed entirely using feature branches, conventional commits, and Pull Requests (PRs).
+- **Full-Width Inverted Contact Banner**: High-impact footer with social reach-outs, custom aesthetic, and back-to-top interaction.
+- **Privacy-Friendly Analytics**: Integrated `@vercel/analytics` for zero-cookie visitor insights and performance tracking.
 
 ---
 
@@ -34,13 +38,14 @@ This site serves as a central hub to showcase my technical projects, software en
 
 | Layer | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Framework** | **Next.js 14 (App Router)** | Static site generation, routing, and fast load times |
+| **Framework** | **Next.js 14 (App Router)** | Static site generation, server components, and dynamic routing |
 | **UI Library** | **React 18** | Modular, reusable component architecture |
-| **Language** | **TypeScript 5** | Strict type safety and maintainable code |
-| **Styling** | **Tailwind CSS** | Utility-first CSS with custom design tokens |
-| **Fonts** | `Space Grotesk` & `Inter` | Loaded with zero CLS via `next/font/google` |
-| **Analytics** | **@vercel/analytics** | Performance and visitor analytics |
-| **Deployment** | **Vercel** | Automated CI/CD pipeline linked to GitHub |
+| **Language** | **TypeScript 5** | Strict end-to-end type safety |
+| **Styling** | **Tailwind CSS** | Utility-first styling with custom Figma design tokens |
+| **Fonts** | `Space Grotesk` & `Inter` | Zero-CLS typography loaded via `next/font/google` |
+| **SEO & Discovery** | Native App Router Metadata | Dynamic sitemaps (`sitemap.xml`) & robots directives (`robots.txt`) |
+| **Analytics** | **@vercel/analytics** | Real-time page view and visitor tracking |
+| **Deployment** | **Vercel** + Cloudflare DNS | Automated CI/CD pipelines connected to `deemantha.is-a.dev` |
 
 ---
 
@@ -49,21 +54,29 @@ This site serves as a central hub to showcase my technical projects, software en
 ```text
 portfolio-website/
 ├── app/
-│   ├── globals.css          # Base CSS reset & scrollbar styling
-│   ├── layout.tsx           # Root layout with Google Fonts & Vercel Analytics
-│   └── page.tsx             # Main page container (1440px desktop grid)
+│   ├── globals.css              # CSS resets, custom scrollbars & base tokens
+│   ├── layout.tsx               # Root layout, Google Fonts, SEO metadata & Vercel Analytics
+│   ├── page.tsx                 # Main landing page (Hero, Featured Projects, Academics, About, Footer)
+│   ├── robots.ts                # Dynamic robots.txt configuration
+│   ├── sitemap.ts               # Dynamic sitemap.xml generator (priority & frequency)
+│   └── projects/
+│       └── page.tsx             # Dedicated /projects page with interactive category filters
 ├── components/
-│   ├── Navbar.tsx           # Sticky navigation with Space Grotesk logo & CV CTA
-│   ├── Hero.tsx             # 2-column display headline & right-aligned links
-│   ├── Projects.tsx         # Data-mapped 2x2 projects showcase
-│   ├── Academics.tsx        # Horizontal highlights strip (GPA 3.80 / 4.0)
-│   ├── About.tsx            # Narrative bio, portrait photo, & core skills
-│   └── Footer.tsx           # Full-width neon lime inverted contact banner
+│   ├── Navbar.tsx               # Sticky nav with active route highlight & CV download CTA
+│   ├── Hero.tsx                 # Editorial 2-column display headline & social quick-links
+│   ├── Projects.tsx             # Homepage featured projects section (top 4 cards)
+│   ├── ProjectCardWide.tsx      # Full-width horizontal project cards with metadata & tool pills
+│   ├── Academics.tsx            # Academic highlights strip (GPA 3.80 / 4.0, Moratuwa)
+│   ├── About.tsx                # Narrative bio, portrait headshot & core technical competencies
+│   └── Footer.tsx               # Full-width neon lime inverted contact banner
+├── data/
+│   └── projects.ts              # Central typed project catalog supporting multi-category tagging
 ├── public/
-│   ├── cv.pdf               # Downloadable resume PDF
-│   └── profile.jpg          # Optimized portrait headshot
-├── tailwind.config.ts       # Custom design tokens, colors & letter-spacing
-└── tsconfig.json            # Strict TypeScript configuration
+│   ├── cv.pdf                   # Downloadable professional ATS-friendly resume
+│   └── profile.jpg              # Optimized portrait headshot
+├── tailwind.config.ts           # Custom color tokens, letter-spacing & surfaces
+├── tsconfig.json                # Strict TypeScript configuration
+└── package.json
 ```
 
 ---
@@ -101,12 +114,13 @@ To run this project locally on your machine:
 ## 📬 Contact & Connect
 
 **Deemantha Gunasekara**  
-*IT Undergraduate | Pursuing Software Engineering & Cloud / DevOps*  
+*IT Undergraduate | Software Engineering, Cloud & DevOps*  
 *University of Moratuwa, Sri Lanka*
 
+- **Website**: [deemantha.is-a.dev](https://deemantha.is-a.dev)
 - **LinkedIn**: [linkedin.com/in/deemantha-gunasekara](https://www.linkedin.com/in/deemantha-gunasekara)
-- **GitHub**: [@DeemanthaGunasekara](https://github.com/DeemanthaGunasekara)
-- **Email**: [gunasekarapdvp@email.com](mailto:gunasekarapdvp@email.com)
+- **GitHub**: [DeemanthaGunasekara](https://github.com/DeemanthaGunasekara)
+- **Email**: [gunasekarapdvp@gmail.com](mailto:gunasekarapdvp@gmail.com)
 
 ---
 
