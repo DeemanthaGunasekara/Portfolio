@@ -8,7 +8,7 @@
 
 > A modern, high-contrast, editorial personal portfolio website designed from scratch in **Figma** and engineered with **Next.js App Router**, **TypeScript**, and **Tailwind CSS**.
 
-🔗 **Live Website**: [https://deemanthagunasekara.vercel.app](https://deemanthagunasekara.vercel.app)   
+🔗 **Live Website**: [https://deemantha.is-a.dev](https://deemantha.is-a.dev)   
 🎨 **Figma Design**: Custom 1440px dark-mode layout with neon-lime accents (`#D4FF4F`)
 
 ---
