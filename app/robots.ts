@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://deemanthagunasekara.vercel.app/sitemap.xml",
+    sitemap: "https://deemantha.is-a.dev/sitemap.xml",
   };
 }

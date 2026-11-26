@@ -61,7 +61,7 @@ export const projects: Project[] = [
     tools: ["Next.js", "TypeScript", "Tailwind CSS"],
     categories: ["Full-Stack"],
     type: "Personal Project",
-    liveUrl: "https://deemanthagunasekara.vercel.app",
+    liveUrl: "https://deemantha.is-a.dev",
     githubUrl: "https://github.com/DeemanthaGunasekara/Portfolio",
     featured: true,
   },

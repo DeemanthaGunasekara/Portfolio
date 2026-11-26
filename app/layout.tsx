@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://deemanthagunasekara.vercel.app"),
+  metadataBase: new URL("https://deemantha.is-a.dev"),
   title: {
     default: "Deemantha Gunasekara | Portfolio",
     template: "%s | Deemantha Gunasekara",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://deemanthagunasekara.vercel.app",
+    url: "https://deemantha.is-a.dev",
     title: "Deemantha Gunasekara | Portfolio",
     description:
       "IT Undergraduate at the University of Moratuwa passionate about Software Engineering, Cloud & DevOps, and Full-Stack Development.",
