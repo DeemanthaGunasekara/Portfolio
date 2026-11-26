@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Deemantha Gunasekara" }],
   creator: "Deemantha Gunasekara",
-  verification: {
-    google: "Hgmq36uW9PbwNa9OodWqOT0aIqeKbwyh8I2lwwpjwvc",
+   verification: {
+    google: "s9Q50xFBIIDlhlNI8x6_5t6HYVCdiMdNdVu3lyzcQzQ",
   },
   openGraph: {
     type: "website",
