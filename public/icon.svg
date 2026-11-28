@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Deep Midnight Squircle Background -->
+  <rect width="120" height="120" rx="30" fill="#14151A"/>
+  <rect x="1.5" y="1.5" width="117" height="117" rx="28.5" stroke="#2A2C33" stroke-width="3"/>
+  <!-- Subtle Radial Glow -->
+  <circle cx="60" cy="60" r="45" fill="url(#glowA)" opacity="0.18"/>
+  <!-- D in Electric Neon Lime -->
+  <path d="M30 35H48C57.941 35 66 43.059 66 53V67C66 76.941 57.941 85 48 85H30V35ZM42 46V74H48C51.866 74 55 70.866 55 67V53C55 49.134 51.866 46 48 46H42Z" fill="#D4FF4F"/>
+  <!-- G in Crisp White -->
+  <path d="M88 47.5L78.5 53.5C76 49.5 72.5 47 67 47C58 47 52 53.5 52 61C52 68.5 58 75 67 75C73 75 77 71.5 78 66H66V56H89V69C86 77 79 85 67 85C51 85 41 74 41 61C41 48 51 37 67 37C76 37 83.5 41 88 47.5Z" fill="#FFFFFF"/>
+  <defs>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(90) scale(50)">
+      <stop stop-color="#D4FF4F"/>
+      <stop offset="1" stop-color="#D4FF4F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
